@@ -1,0 +1,19 @@
+// No javascript here but this is what I call using the DRY(Do Not Repeat Yourself) method
+
+/* Colors */
+$main-color = #22A7F0
+$sub-title = #666666
+
+/* Mixins */
+vendor(prop, args)
+	-webkit-{prop} args
+	   -moz-{prop} args
+	    -ms-{prop} args
+	     -o-{prop} args
+	        {prop} args
+transform()
+	vendor('transform', arguments)
+box-shadow()
+	vendor('box-shadow', arguments)
+transition()
+	vendor('transition', arguments)
